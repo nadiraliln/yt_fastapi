@@ -16,7 +16,7 @@ app.add_middleware(
 )
 
 class URLRequest(BaseModel):
-url: str
+  url: str
 
 @app.post("/api/metadata")
 async def get_metadata(request: URLRequest):
