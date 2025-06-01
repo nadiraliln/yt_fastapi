@@ -7,7 +7,7 @@ from datetime import datetime
 
 app = FastAPI()
 
-# Configure CORS - Update with your frontend URL
+# Configure CORS
 app.add_middleware(
   CORSMiddleware,
   allow_origins = ["https://yt-next-eight.vercel.app"], # For production, specify your frontend URL
